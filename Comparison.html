@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solutions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="#">Latitude</a>
+    <div class="topnav-right">
+      <a href="Comparison.html">Comparison</a>
+      <a href="Data.html">Data</a>
+          <!-- creating a drop down menu -->
+                  <!-- <select id="navigation_bar">
+                    <option value="Home">Plots</option>
+                    <option><a href="visualizations/temp.html">Max Temperature</a></option>
+                    <option><a href="visualizations/Humidity.html">Humidity</a></option>
+                    <option><a href="visualizations/cloudiness.html">Cloudiness</a></option>
+                    <option><a href="visualizations/wind.html">Wind</a></option>
+                  </select> -->
+        <div class="dropdown">
+            <button class="dropbtn">Plots</button>
+          <div class="dropdown-content">
+              <a href="visualizations/temp.html">Max Temperature</a>
+              <a href="visualizations/Humidity.html">Humidity</a>
+              <a href="visualizations/cloudiness.html">Cloudiness</a>
+              <a href="visualizations/wind.html">Wind</a>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- Need to build navbar-->
+<!-- <div class="container" Not needed shortens the navigation bar> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div>
+        <a class="navbar-brand" href="#" id="box-brand">Latitude</a>
+      </div>
+        <div></div> -->
+        <!-- <ul> -->
+              <!-- creating a drop down menu-->
+          <!-- <select id="nav-select">
+            <option value="Home">Home</option>
+            <option value="About">About</option>
+            <option value="Portfolio">Portfolio</option>
+            <option value="Contact">Contact</option>
+          </select>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav> -->
+<!-- </div> -->
+<!-- Needs to go in container-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+                <!-- Begin building Main summary box-->
+                    <!-- <article class="description-content"></article>
+                          <h2 class="description-header">Summary: Latitude vs. X</h2>
+                          <hr class="description-hr">
+                          <img src="Fig1.png" alt="Temperatures" height="230">
+                          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </article>
+              </div>
+              <div class="col-lg-4"> -->
+                <!-- Begin building visualization box-->
+        <section id="box-visualization">
+          <div class="visualization-content">
+            <h2 class="visualization-header">Visualizations</h2>
+            <p>Click on any plot to get an in-depth analysis!</p>
+            <hr class="description-hr">
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="420"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="visualizations/Humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" height="420"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="420"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="420"></a>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
